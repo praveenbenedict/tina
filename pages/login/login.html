@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+    <head>
+
+        <title>Login</title>
+        <link rel = "stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+		<link rel = "stylesheet" type="text/css" href="css/style.css">
+		<link rel = "stylesheet" type="text/css" href="css/style-quiz.css">
+
+        <script src ="../../js/jquery-3.2.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        
+    </head>
+
+    <body>
+    	<section class="login-form">
+    		<section class="login container-fluid">
+					<div class = "row">	
+						<!-- <h1>Login</h1>   -->
+						<section class="login-dialog dialog">		
+							<form>	
+								Register Number : <input type="Number" placeholder="12345" id ="regNo"><br><br>
+								Subject : <select id = "subject-list">
+											<option>Programming and Data Structures</option>
+											<option>Database Management Systems</option>
+											<option>Analog And Digital Communication</option>
+											<option>Computer Architecture</option>
+									</select><br><br>
+								<p><a id="attempt-button" >Attempt Test</a></p>
+							</form>
+						</section>
+					</div>
+    			</section>
+			</section>
+			
+			<section class="test-form container-fluid">
+					<div class = "row">	
+							<div class = "grid">
+								<div id = "quiz">
+									<h1 id="subject-title"></h1>
+									<h2 id="question" class = "text-center"></h2>
+									<div class = "buttons text-center">
+										<button id = "button0" class="btn btn-lg"><span id="choice0"></span></button><br><br>
+										<button id = "button1" class="btn btn-lg"><span id="choice1"></span></button><br><br>
+										<button id = "button2" class="btn btn-lg"><span id="choice2"></span></button><br><br>
+										<button id = "button3" class="btn btn-lg"><span id="choice3"></span></button><br><br>
+									</div>
+					
+									<footer>
+										<p id = "progress" class = "text-center">Question x of y</p>
+									</footer>
+								</div>
+							</div>
+					</div>
+    			</section>
+    		</section>
+		<script src = "script/particles.min.js"></script>
+		<script src = "script/quizController.js"></script>
+		<script src = "script/question.js"></script>
+		<script src = "script/app.js"></script>
+		<script src = "script/script.js"></script>
+		
+    </body>
+    
+</html>
